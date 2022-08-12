@@ -3,7 +3,7 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
+    margin: 10px 10px 40px 10px;
 }
 .headerContainer {
     max-width: 900px;
@@ -21,7 +21,7 @@ body {
 .container .leftSide h1 {
     margin: 0;
     font-size: 40px;
-    color: #3a4b5c
+    color: #3a4b5c;
 }
 .container .leftSide p {
     font-size: 16px;
@@ -89,4 +89,55 @@ body {
     margin-top: 170px;
 }
 
-@media (max-width: 770px)
+@media (max-width: 800px) {
+    .headerContainer {
+        margin: 25px auto;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .leftSide {
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    .container .leftSide h1 {
+        font-size: 35px;
+    }
+    .container .leftSide p {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+    .container .leftSide input {
+        margin-bottom: 10px;
+    }
+    .container .leftSide button {
+        font-size: 15px;
+        padding: 15px 0;
+        margin-top: 55px;
+        transition: all ease 0.3s;
+    }
+
+    .rightSide {
+        margin-left: 0px;
+    }
+    .container .rightSide .rightArrow {
+        width: 60px;
+        height: 60px;
+        margin-left: 20px;
+        margin-top: 196px;
+    }
+    
+}
+@media (max-width: 483px) {
+    .headerContainer {
+        margin: 20px auto;
+    }
+    .leftSide {
+        margin-bottom: 35px;
+    }
+
+    .container .rightSide .grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}

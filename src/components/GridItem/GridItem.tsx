@@ -11,7 +11,7 @@ export const GridItem = ({item}: Props) => {
     return (
         <div className={styles.main} style={{ backgroundColor: item.color }}>
             <div className={styles.gridIcon}>
-                <img src={ item.icon === 'up' ? upImage : downImage } alt='' width={30} />
+                <img src={ item.icon === 'up' ? upImage : downImage } alt='' className={styles.handImage} />
             </div>
             <div className={styles.gridTitle}>{item.title}</div>
             {item.yourImc &&

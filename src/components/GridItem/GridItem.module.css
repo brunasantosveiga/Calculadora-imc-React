@@ -8,6 +8,9 @@
     flex-direction: column;
     padding: 6px;
 }
+.handImage {
+    width: 30px;
+}
 .gridIcon {
     width: 70px;
     height: 70px;
@@ -29,4 +32,27 @@
 .yourImc {
     font-size: 17px;
     margin: 12px 0 30px 0;
+}
+
+@media (max-width: 800px) {
+    .main {
+        padding: 20px;
+    }
+    .handImage {
+        width: 25px;
+    }
+    .gridIcon {
+        width: 60px;
+        height: 60px;
+    }
+    .gridTitle {
+        font-size: 18px;
+    }
+    .gridInfo p {
+        font-size: 12px;
+        margin-top: 14px;
+    }
+    .yourImc {
+        font-size: 16px;
+    }
 }
